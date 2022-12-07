@@ -1,18 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Mulish:wght@600;700&display=swap');
 
 :root{
-    --h-color: hsl(219, 90%, 58%);
+    --h-color: #3579F4;
     --white-color: hsl(0, 0%, 100%);
     --base-color: hsl(245, 33%, 13%);
-    --contact: hsl(219, 100%, 67%);
+    --contact: #3579f4;
+    --form: #5591ff;
     font-size: 62.5%;
     font-family: serif;
     left: 28px;
+    min-width: 320px;
+    max-width: 1024px;
+}
+
+.message{
+    display: block;
+    padding: 4rem;
+    padding-left: 1rem;
+    background-color: var(--form);
+    border-radius: 1rem;
+    border: 10rem;
+    width: 90%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 a{
     text-decoration: none;
     color: var(--a-color);
+}
+
+.color{
+    color: var(--white-color);
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+input, ::placeholder{
+    color: var(--white-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    min-width: 30rem;
+}
+
+.name{
+    display: block;
+    padding: 2rem;
+    padding-left: 3rem;
+    background-color: var(--form);
+    border-radius: 1rem;
+    border: 10rem;
+    width: 90%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 h1{
@@ -24,14 +66,20 @@ h1{
     height: 4.2rem;
     left: 2.7rem;
     top: 13.5rem;
-    line-height: 4.2rem;;
+    line-height: 4.2rem;
+    
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 h2{
     font-family: 'Mulish', sans-serif;
     font-weight: 700;
     font-size: 4.6rem;
-    color: var(--base-color);
+    color: var(--white-color);
+    
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 h3{
@@ -40,6 +88,9 @@ h3{
     font-size: 2.8rem;
     color: var(--h-color);
     line-height: 2.8rem;
+    
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 #services{
@@ -49,6 +100,10 @@ h3{
 
 hr{
     border: 0.3rem solid #3579F4;
+    border-radius: 1rem;
+    background-color: #3579F4;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 div{
@@ -56,16 +111,63 @@ div{
     border-radius: 1rem;
 }
 
+.flex-div{
+    display: flex;
+    flex-direction: column;
+}
+
 footer{
     background-color: var(--base-color);
+    border-start-end-radius: 5rem;
+    border-start-start-radius: 5rem;
+    margin-top: -5rem;
+}
+
+footer>div>div>div>p{
+    font-weight: 500;
+    font-size:2.2rem;
+    color: var(--white-color);
+}
+
+.p-flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .footmenu{
     color:var(--white-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+}
+
+footer>div>ul>li>a{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.marg{
+    margin: 10rem;
 }
 
 .contact{
     background-color: var(--contact);
+    padding: 1rem;
+    border-start-end-radius: 5rem;
+    border-start-start-radius: 5rem;
+    padding-bottom: 10rem;
+}
+
+.option{
+    margin-bottom: 10rem;
+}
+
+.img-foot{
+    width: 23.5rem;
+    height: 6.7rem;
 }
 
 .ss{
@@ -89,24 +191,100 @@ p{
     font-size: 2.2rem;
     color: var(--base-color);
     line-height: 2.4rem;
-}
 
-div>ul>li>a{
-    font-family: 'Mulish', sans-serif;
-    font-size: 2.2rem;
-    line-height: 11rem;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    
-    display: block;
-    width: 35.2rem;
-    height: 10rem;
-    background: #FFFFFF;
-    box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 2rem;
-    padding: 3.2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 ul{
     list-style-type: none;
+    padding-inline-start: 0;
+}
+
+section>div>ul>li>a{
+    font-family: 'Mulish', sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: block;
+    background: #FFFFFF;
+    box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.1);
+    border: 4rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: 2rem;
+}
+
+.a-ft{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding: 4rem;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.flex-foot{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-img{
+    display: none;
+}
+
+.menu-nav{
+    display: none;
+}
+
+.boats{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.serv{
+    display: flex;
+    flex-direction: column;
+    margin-top: -4rem;
+}
+
+.nik{
+    color: hsla(0, 0%, 100%, 0.4);
+    font-size: 1.4rem;
+}
+@media all and (min-width: 700px){
+
+    .menu-nav{
+        display: initial;        
+    }
+    p{
+        max-width: 35rem;
+    }
+    .menu-but{
+        display: none;
+    }
+    .menu-head{
+        display: flex;
+        gap: 3rem;
+    }
+    .boats{
+        max-width: 43rem;
+    }
+    .menu-img{
+        display: flex;
+        gap: 1rem;
+    }
+    .img-foot{
+        width: 27.2rem;
+        height: 7.755rem;
+    }
+
 }

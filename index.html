@@ -10,15 +10,19 @@
 
 
 <body>
-    <header>
-        <a href="#home"><img src="/" alt="MDA SHIPPING"></a>
-        <button><img src="/" alt="Menu"></button>
-        <nav>
-            <ul>
+    <header class="flex">
+        <a href="#home"><img src="Group 199.svg" alt="MDA SHIPPING"></a>
+        <button class="menu-but"><img src="/" alt="Menu"></button>
+        <nav  class="menu-nav">
+            <ul class="menu-head">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#contacts">CONTACTS</a></li>
             </ul>
+        </nav>
+        <nav class="menu-img">
+            <img src="" alt="Telegram">
+            <img src="" alt="WhatsApp">
         </nav>
     </header>
 
@@ -30,89 +34,107 @@
             <img src="/" alt="Boat">
             <a class ="ss" href="">WE LOAD ALL TYPES OF BOATS</a>
             <ul>
-                <li>
-                    <img src="/" alt="Fishing boats">
-                    <p class="spisok">Fishing boats</p>
-                </li>
-                <li>
-                    <img src="/" alt="Jet skis">
-                    <p class="spisok">Jet skis</p>
-                </li>
-                <li>
-                    <img src="/" alt="Sport boats">
-                    <p class="spisok">Sport boats</p>
-                </li>
-                <li>
-                    <img src="/" alt="Pontoon boats">
-                    <p class="spisok">Pontoon boats</p>
-                </li>
-                <li>
-                    <img src="/" alt="Sail boats">
-                    <p class="spisok">Sail boats</p>
-                </li>
-                <li>
-                    <img src="/" alt="Yachts">
-                    <p class="spisok">Yachts</p>
-                </li>
+                <div class="boats">
+                    <li>
+                        <img src="/" alt="Fishing boats">
+                        <p class="spisok">Fishing boats</p>
+                    </li>
+                    <li>
+                        <img src="/" alt="Jet skis">
+                        <p class="spisok">Jet skis</p>
+                    </li>
+                    <li>
+                        <img src="/" alt="Sport boats">
+                        <p class="spisok">Sport boats</p>
+                    </li>
+                </div>
+                <div class="boats">
+                    <li>
+                        <img src="/" alt="Pontoon boats">
+                        <p class="spisok">Pontoon boats</p>
+                    </li>
+                    <li>
+                        <img src="/" alt="Sail boats">
+                        <p class="spisok">Sail boats</p>
+                    </li>
+                    <li>
+                        <img src="/" alt="Yachts">
+                        <p class="spisok">Yachts</p>
+                    </li>
+                </div>
             </ul>
         </section>
         <section>
             <h2 hidden>jhvh</h2>
-            <h3>Container shipment</h3>
-            <hr>
+            <div class="flex-div">
+                <h3>Container shipment</h3>
+                <hr>
+            </div>
             <p>Boats or yachts are often transported in containers as a better alternative for cost effectiveness and security reasons. We can offer flip loading for bigger boats that don’t exceed 102 inches in beam width.</p>
             <img src="/" alt="boats">
-            <h3>Flat rack loading</h3>
-            <hr>
+            <div class="flex-div">
+                <h3>Flat rack loading</h3>
+                <hr>
+            </div>
             <p>Boats are transported on the platform and safely lashed. All Flat Rack Shipment are passing NCB Inspection. Best option for bigger boat that don’t exceed 36 feet in length.</p>
             <img src="/" alt="boat">
-            <h3>On deck cargo</h3>
-            <hr>
+            <div class="flex-div">
+                <h3>On deck cargo</h3>
+                <hr>
+            </div>
             <p>Boats or yachts are loaded/ unloaded directly from the sea or from the shore. Yachts Ships or cranes in cradles are utilized to load bigger boats or yachts.</p>
             <img src="/" alt="Boats">>
         </section>
-        <section>
+        <section class="option">
             <h2 id="services">Optional services</h2>
-            <div>
+            <div class="serv">
                 <ul>
                     <li class="li_ft"><a href="/">Cargo insurance</a></li>
                     <li class="li_ft"><a href="/">Long term cargo storage</a></li>
                     <li class="li_ft"><a href="/">Detailing and cleaning</a></li>
-                    <li class="li_ft"><a href="/">Additional report and inspection</a></li>
-                    <li class="li_ft"><a href="/">Plastic film coverage of broken part</a></li>
-                    <li class="li_ft"><a href="/">Moisture bags to avoid mold</a></li>
+                </ul>
+            </div>
+            <div class="serv">
+                <ul>
+                    <li class="li_ft"><a class="a-ft" href="/">Additional report<br> and inspection</a></li>
+                    <li class="li_ft"><a class="a-ft" href="/">Plastic film coverage <br>of broken part</a></li>
+                    <li class="li_ft"><a class="a-ft" href="/">Moisture bags<br> to avoid mold</a></li>
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="contact">
             <h2 id="contacts">Contacts us</h2>
-            <p>Contact us if you need more information about our services</p>
+            <p class="color">Contact us if you need more information about our services</p>
             <form>
-                <p><label><input type="text" placeholder="Name"></label></p>
-                <p><label><input type="text" placeholder="Phone Number"></label></p>
+                <p><label><input type="text" placeholder="Name" class="name"></label></p>
+                <p><label><input type="text" placeholder="Phone Number" class="name"></label></p>
                 <p><label>
-                    <textarea placeholder="Message" cols="30" rows="10"></textarea>
-                </label></p>
+                    <input type="text" placeholder="Message" class="message"></textarea>
+                </label></p><br>
                 <p><label><input type="checkbox">I agree with the <a href="">Privacy policy</a></label></p>
                 <button>SEND A MESSAGE</button>
             </form>
             <img src="/" alt="">
         </section>
-    </main>>
+    </main>
     <footer>
-        <img src="/" alt="yyyy">
-        <nav class="footmenu">
-            <ul>
+        <div class="flex-foot">
+            <img class="img-foot" src="Group 200.svg" alt="yyyy">
+            <ul class="footmenu">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#contacts">CONTACTS</a></li>
             </ul>
-        </nav>
-        <a href="#"><img src="/" alt=""></a>
-        <a href="#"><img src="/" alt=""></a>
-        <p>info@cargo.us</p>
-        <p>+1 912 000 0000</p>
-        <p>Copyright © 2022 Cargo. All Rights reserved.</p>
+            <div class="marg">
+                <a href="#"><img src="/" alt=""></a>
+                <a href="#"><img src="/" alt=""></a>
+                <div class="p-flex">
+                    <p>info@cargo.us</p>
+                    <p>+1 912 000 0000</p>
+                </div>
+            </div>
+        </div>
+        <p class="nik">Copyright © 2022 Cargo. All Rights reserved.</p>
     </footer>
 </body>
 </html>
