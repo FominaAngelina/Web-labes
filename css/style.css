@@ -6,17 +6,21 @@
     --base-color: hsl(245, 33%, 13%);
     --contact: #3579f4;
     --form: #5591ff;
+    --button: #F0F0FA;
+    --button-text: #8C8C8C;
     font-size: 62.5%;
     font-family: serif;
     left: 28px;
-    min-width: 320px;
-    max-width: 1024px;
+    min-width: 375px;
+    max-width: 1300px;
 }
 
 .message{
     display: block;
-    padding: 4rem;
-    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
     background-color: var(--form);
     border-radius: 1rem;
     border: 10rem;
@@ -36,13 +40,22 @@ a{
     line-height: 2rem;
 }
 
+.garag{
+    width: 100%;
+}
+
 input, ::placeholder{
     color: var(--white-color);
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2rem;
-    min-width: 30rem;
+    min-width: 78%;
+}
+
+.check{
+    min-width: 1rem;
+    margin-right: 3rem;
 }
 
 .name{
@@ -76,8 +89,8 @@ h2{
     font-family: 'Mulish', sans-serif;
     font-weight: 700;
     font-size: 4.6rem;
-    color: var(--white-color);
-    
+    color: var(--base-color);
+    margin-top: 7rem;
     margin-left: 3rem;
     margin-right: 3rem;
 }
@@ -88,7 +101,7 @@ h3{
     font-size: 2.8rem;
     color: var(--h-color);
     line-height: 2.8rem;
-    
+    margin-top: 6rem;
     margin-left: 3rem;
     margin-right: 3rem;
 }
@@ -127,12 +140,16 @@ footer>div>div>div>p{
     font-weight: 500;
     font-size:2.2rem;
     color: var(--white-color);
+    margin-bottom: 0;
+    margin: auto;
+    margin-top: 2rem;
 }
 
 .p-flex{
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 18rem;
 }
 
 .footmenu{
@@ -147,10 +164,6 @@ footer>div>ul>li>a{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
-}
-
-.marg{
-    margin: 10rem;
 }
 
 .contact{
@@ -168,11 +181,30 @@ footer>div>ul>li>a{
 .img-foot{
     width: 23.5rem;
     height: 6.7rem;
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.marg{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 8.7rem;
+    margin-bottom: 3rem;
+}
+
+.img-sec2{
+    width: 90%;
+    max-width: 70.5rem;
+    margin: 3rem;
 }
 
 .ss{
     font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
+    margin-left: 3rem;
     font-weight: 600;
     color: var(--h-color);
     line-height: 22px;
@@ -183,6 +215,8 @@ footer>div>ul>li>a{
     font-weight: 600;
     font-size: 1.4rem;
     text-align: center;
+    width: 90%;
+    margin: 0;
 }
 
 p{
@@ -201,20 +235,20 @@ ul{
     padding-inline-start: 0;
 }
 
-section>div>ul>li>a{
+section>ul>li>a{
     font-family: 'Mulish', sans-serif;
     font-size: 2.2rem;
     text-align: center;
     color: rgb(0, 0, 0);
     display: block;
-    background: #FFFFFF;
     box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.1);
     border: 4rem;
     border-radius: 2rem;
-    padding: 1rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    margin: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 .a-ft{
@@ -244,24 +278,60 @@ section>div>ul>li>a{
     display: none;
 }
 
+.img-boat{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.img-rectagle{
+    width: 90%;
+    height: 9rem;
+}
+
 .boats{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr;
+    width: 100%;
+    margin: 2rem;
     margin-left: 3rem;
     margin-right: 3rem;
 }
 .serv{
     display: flex;
     flex-direction: column;
-    margin-top: -4rem;
+    margin-top: -1rem;
+}
+
+.button-send{
+    display: block;
+    border-color: var(--button);
+    background-color: var(--button);
+    width: 90%;
+    height: 8rem;
+    border-radius: 1rem;
+    margin: auto;
+    color: var(--button-text);
+    font-family: 'Intel', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.police{
+    color: var(--white-color);
+    font-size: 1.6rem;
 }
 
 .nik{
     color: hsla(0, 0%, 100%, 0.4);
     font-size: 1.4rem;
+    width: 30rem;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5rem;
 }
-@media all and (min-width: 700px){
 
+@media all and (min-width: 700px){
     .menu-nav{
         display: initial;        
     }
@@ -270,6 +340,7 @@ section>div>ul>li>a{
     }
     .menu-but{
         display: none;
+        background-color: var(--white-color);
     }
     .menu-head{
         display: flex;
@@ -278,13 +349,92 @@ section>div>ul>li>a{
     .boats{
         max-width: 43rem;
     }
+    br{
+        display: none;
+    }
     .menu-img{
         display: flex;
         gap: 1rem;
     }
+    .a-ft {
+        padding: 5rem;
+        margin: 2rem;
+    }
+}
+
+@media all and (min-width: 1000px)
+{
+    h3{
+        margin-right: 0;
+        width: 30rem;
+    }
+    .flex-div{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    section>ul>li>a{
+        width: 100%;
+    }
+    .a-ft{
+        padding: 2rem;
+    }
+    hr{
+        height: 1px;
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+    .hr1{
+        width: 74%;
+    }
+    .hr2{
+        width: 91%;
+    }
+    .hr3{
+        width: 111%;
+    }
+    br{
+        display: initial;
+    }
+    .flex-foot{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .serv{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footmenu{
+        margin-top: 7.5rem;
+        align-items: flex-start;
+        height: 30rem;
+    }
     .img-foot{
+        margin-left: 10%;
+        margin-top: 5.5rem;
+        margin-right: 0;
         width: 27.2rem;
         height: 7.755rem;
+        margin-right: 10rem;
+    }
+    .p-flex{
+        display: flex;
+        align-items: flex-start;
+        margin-right: 6rem;
+    }
+    .marg{
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 7.5rem;
+    }
+    .nik{
+        margin-left: 10%;
+    }
+
+    .boats{
+        grid-template-columns: 33% 33% 33%;
     }
 
 }
