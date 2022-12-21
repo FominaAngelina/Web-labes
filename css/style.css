@@ -299,6 +299,7 @@ section>ul>li>a{
     width: 50%;
     max-width: 16rem;
     padding: 1rem;
+    min-height: 14rem;
     padding-left: 23%;
     padding-right: 20%;
     background-color: #F0F0FA;
