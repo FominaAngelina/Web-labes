@@ -181,6 +181,10 @@ footer>div>ul>li>a{
     padding-bottom: 10rem;
 }
 
+#contacts{
+    color: var(--white-color);
+}
+
 .option{
     margin-bottom: 10rem;
 }
@@ -203,8 +207,7 @@ footer>div>ul>li>a{
 }
 
 .img-sec2{
-    width: 90%;
-    max-width: 70.5rem;
+    width: 93%;
     margin: 3rem;
 }
 
@@ -360,9 +363,6 @@ section>ul>li>a{
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 1.936rem;
-    }
-    .boats{
-        max-width: 43rem;
     }
     br{
         display: none;
