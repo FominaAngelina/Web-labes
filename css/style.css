@@ -12,14 +12,18 @@
     font-family: serif;
     left: 28px;
     min-width: 375px;
-    max-width: 1300px;
+    max-width: 1400px;
+}
+
+body{
+    margin: 0;
 }
 
 .message{
     display: block;
     padding-top: 2rem;
     padding-left: 3rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
     padding-bottom: 5rem;
     background-color: var(--form);
     border-radius: 1rem;
@@ -62,6 +66,7 @@ input, ::placeholder{
     display: block;
     padding: 2rem;
     padding-left: 3rem;
+    padding-right: 3rem;
     background-color: var(--form);
     border-radius: 1rem;
     border: 10rem;
@@ -143,6 +148,7 @@ footer>div>div>div>p{
     margin-bottom: 0;
     margin: auto;
     margin-top: 2rem;
+    margin-left: 0;
 }
 
 .p-flex{
@@ -169,6 +175,7 @@ footer>div>ul>li>a{
 .contact{
     background-color: var(--contact);
     padding: 1rem;
+    padding-right: 0;
     border-start-end-radius: 5rem;
     border-start-start-radius: 5rem;
     padding-bottom: 10rem;
@@ -208,6 +215,7 @@ footer>div>ul>li>a{
     font-weight: 600;
     color: var(--h-color);
     line-height: 22px;
+    margin-bottom: 5rem;
 }
 
 .spisok{
@@ -215,8 +223,8 @@ footer>div>ul>li>a{
     font-weight: 600;
     font-size: 1.4rem;
     text-align: center;
-    width: 90%;
     margin: 0;
+    margin-right: 0;;
 }
 
 p{
@@ -244,8 +252,8 @@ section>ul>li>a{
     box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.1);
     border: 4rem;
     border-radius: 2rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5.4rem;
+    padding-bottom: 5.4rem;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
@@ -261,13 +269,14 @@ section>ul>li>a{
 .flex{
     display: flex;
     justify-content: space-between;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    align-items: center;
+    margin: 3rem;
 }
 
 .flex-foot{ 
     display: flex;
     flex-direction: column;
+    align-items: center
 }
 
 .menu-img{
@@ -284,25 +293,30 @@ section>ul>li>a{
 }
 
 .img-rectagle{
-    width: 90%;
-    height: 9rem;
+    width: 50%;
+    max-width: 16rem;
+    padding: 1rem;
+    padding-left: 23%;
+    padding-right: 20%;
+    background-color: #F0F0FA;
+    border-radius: 1rem;
 }
 
 .boats{
+    min-width: 350px;
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    width: 100%;
     margin: 2rem;
     margin-left: 3rem;
     margin-right: 3rem;
 }
 .serv{
-    display: flex;
-    flex-direction: column;
-    margin-top: -1rem;
-}
 
+}
+.img-dop{
+    display: none;
+}
 .button-send{
     display: block;
     border-color: var(--button);
@@ -335,9 +349,6 @@ section>ul>li>a{
     .menu-nav{
         display: initial;        
     }
-    p{
-        max-width: 35rem;
-    }
     .menu-but{
         display: none;
         background-color: var(--white-color);
@@ -345,6 +356,10 @@ section>ul>li>a{
     .menu-head{
         display: flex;
         gap: 3rem;
+        font-family: 'Intel', sans-serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.936rem;
     }
     .boats{
         max-width: 43rem;
@@ -356,25 +371,73 @@ section>ul>li>a{
         display: flex;
         gap: 1rem;
     }
-    .a-ft {
-        padding: 5rem;
-        margin: 2rem;
+    .a-ft{
+        padding-top: 5.4rem;
+        padding-bottom: 5.4rem;
     }
 }
 
-@media all and (min-width: 1000px)
+@media all and (min-width: 1150px)
 {
+    h1{
+        margin-left: 0;
+    }
+    .ss{
+        margin-left: 0;
+    }
+    p{
+        max-width: 35rem;
+        margin-left: 13rem;
+        margin-right: 2rem;
+    }
+    .button-send{
+        margin-right: 2rem;
+        margin-left: 13rem;
+        width: 40rem;
+    }
+    .flex{
+        margin-left: 13rem;
+        margin-right: 13rem;
+    }
+    .message{
+        width: 35rem;
+    }   
+    .name{
+        width: 35rem;
+    }
     h3{
         margin-right: 0;
+        margin-left: 0;
         width: 30rem;
+    }
+    h2{
+        margin-left: 13rem;
+    }
+    .section-flex{
+        display: flex;
+        margin-left: 13rem;
+    }
+    .p-section{
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 44.5rem;
+        margin-bottom: 9rem;
     }
     .flex-div{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        margin-left: 13rem;
+        margin-right: 13rem;
     }
     section>ul>li>a{
-        width: 100%;
+        padding-top: 3.4rem;
+        padding-bottom: 3.4rem;
+    }
+    .img-dop{
+        display: initial;
+        margin-right: 0;
+        height: auto;
     }
     .a-ft{
         padding: 2rem;
@@ -393,6 +456,13 @@ section>ul>li>a{
     .hr3{
         width: 111%;
     }
+    .serv{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1ft 1ft;
+        margin-left: 11rem;
+        margin-right: 11rem;
+    }
     br{
         display: initial;
     }
@@ -400,11 +470,7 @@ section>ul>li>a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
-    }
-    .serv{
-        flex-direction: row;
-        justify-content: space-between;
+        align-items: flex-start
     }
     .footmenu{
         margin-top: 7.5rem;
@@ -432,9 +498,27 @@ section>ul>li>a{
     .nik{
         margin-left: 10%;
     }
-
+    .img-boat{
+        display: none;
+    }
     .boats{
         grid-template-columns: 33% 33% 33%;
+        margin: 0;
     }
-
+    .section2-flex{
+        display: flex;
+    }
+    .img-sec2{
+        width: 100%;
+        margin-right: 13rem;
+    }
+    .img-rectagle{
+        max-width: 7.3rem;
+        min-width: 6.2rem;
+        min-height: 8.2rem;
+    }
+    .contact{
+        display: flex;
+        padding-right: 0;
+    }
 }
