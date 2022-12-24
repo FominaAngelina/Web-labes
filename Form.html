@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_form.css">
+    <title>Forms</title>
+</head>
+<body>
+    <main>
+        <form name="Personal information" method="POST" data-netlify="true">
+            <div class="Personal">
+                <h1> Personal information</h1>
+                <p><label>Surname*</label></p>
+                <input type="text" placeholder="Surname" name="Surname" required>
+                <p><label>Name*</label></p>
+                <input type="text" placeholder="Name" name="Name" required>
+                <p><label>Year of birth</label></p>
+                <input type="date">
+                <div class="MF">
+                    <p><label><input type="checkbox" name="Male">Male</label>
+                    <p><label><input type="checkbox" name="Female">Female</label</p>
+                </div>
+                <p><label>Password*</label></p>
+                <input type="password" placeholder="Password" name="Password" required>
+            </div>
+            <div class="Contacts">
+                <h1> Contacts</h1>
+                <p><label>Email</label></p>
+                <input type="email" placeholder="Email" name="Email">
+                <p><label>Phone*</label></p>
+                <input type="tel" placeholder="Phone" name="Phone" required>
+                <p><label>Time for communication:</label></p>
+                <div class="time">
+                    <p><label><input type="checkbox" name="Morning"> Morning</label></p>
+                    <p><label><input type="checkbox" name="Day"> Day</label></p>
+                    <p><label><input type="checkbox" name="Evening"> Evening</label></p>
+                    <p><label><input type="checkbox" name="Night"> Night</label></p>
+                </div>
+            </div>
+            </label><input type="submit" class="Send" >
+            <button type="reset" class="Resert">Resert</button>
+        </form>
+    </main>
+</body>
+</html>

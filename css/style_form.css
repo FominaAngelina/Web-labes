@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Mulish:wght@600;700&family=Sevillana&display=swap');
+
+form{
+    text-align: center;
+}
+.MF{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 300px;
+    margin: auto;
+}
+.time{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 300px;
+    margin: auto;
+}
+h1{
+    font-family: 'Sevillana';
+}
+.Personal{
+    padding: 20px;
+    border: 10px solid red;
+    margin-bottom: 15px;
+}
+p{
+    font-family: 'Sevillana';
+}
+.Contacts{
+    padding: 20px;
+    border: 10px solid red;
+}
+.Send{
+    margin: 10px;
+}
+::selection{
+    color: blue;
+    background-color: aqua;
+}
+::placeholder{
+    font-family: 'Sevillana';
+}
+.Resert{
+    width: 65px;
+    padding: 6px;
+    height: 25px;
+    margin: 10px;
+}
+input:active{
+    background-color: cornflowerblue;
+}
+input:hover{
+    text-decoration: underline;
+}
+button:focus{
+    background-color: aqua;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+button:hover{
+    background-color: #FFCCCC;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
